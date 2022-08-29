@@ -1,0 +1,50 @@
+{
+  "name": "personal-finance-manager",
+  "version": "0.0.0",
+  "description": "A Python Based Utility for Managing Personal Finances",
+  "main": "main.py",
+  "scripts": {
+    "prepare": "husky install && husky add .husky/commit-msg \"npx --no-install commitlint --edit \"$1\"\"",
+    "git:stage": "git add",
+    "git:commit": "cz",
+    "git:push": "git push --follow-tags origin dev",
+    "release:pre": "standard-version --prerelease --sign",
+    "release:patch": "standard-version --release-as patch --sign",
+    "release:minor": "standard-version --release-as minor --sign",
+    "release:major": "standard-version --release-as major --sign",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tks18/personal-finance-manager.git"
+  },
+  "keywords": [
+    "Personal Finance",
+    "Finance",
+    "Finance Manager",
+    "Python"
+  ],
+  "author": {
+    "name": "Sudharshan TK",
+    "email": "hi@sudharshan.dev",
+    "url": "https://sudharshan.dev"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/tks18/personal-finance-manager/issues"
+  },
+  "homepage": "https://github.com/tks18/personal-finance-manager#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.1",
+    "@commitlint/config-conventional": "^17.1.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "standard-version": "^9.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

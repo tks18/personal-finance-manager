@@ -2,7 +2,7 @@
   "name": "personal-finance-manager",
   "version": "0.0.1-1",
   "description": "A Python Based Utility for Managing Personal Finances",
-  "main": "main.py",
+  "main": "app.py",
   "scripts": {
     "prepare": "husky install && husky add .husky/commit-msg \"npx --no-install commitlint --edit \"$1\"\"",
     "git:stage": "git add",

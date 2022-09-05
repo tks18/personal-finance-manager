@@ -117,5 +117,11 @@ out
 !.vscode/launch.json
 !.vscode/tasks.json
 
+# Python Files
+venv
+__pycache__
+
 # Other Files
 tests/rest/request-bodies
+externals
+backup.py
